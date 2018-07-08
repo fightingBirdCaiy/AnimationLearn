@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.caiy.learn.animation.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:background="#001100"
+        >
+
+        <TextView
+            android:id="@+id/hint_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="点击这里关注主播哦"
+            android:textSize="15sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="30dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="0dp"
+            android:background="@drawable/hint_bg"
+            android:visibility="invisible"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hint_outer_rl_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="点击这里关注主播哦"
+        android:textSize="15sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="30dp"
+        android:paddingTop="50dp"
+        android:paddingBottom="0dp"
+        android:background="@drawable/hint_bg"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="170dp"
+        android:background="#0000ff"
+        />
+</RelativeLayout>
