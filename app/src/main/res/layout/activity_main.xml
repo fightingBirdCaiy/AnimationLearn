@@ -26,7 +26,7 @@
             android:textSize="15sp"
             android:paddingLeft="10dp"
             android:paddingRight="30dp"
-            android:paddingTop="50dp"
+            android:paddingTop="8dp"
             android:paddingBottom="0dp"
             android:background="@drawable/hint_bg"
             android:visibility="invisible"
@@ -45,7 +45,7 @@
         android:textSize="15sp"
         android:paddingLeft="10dp"
         android:paddingRight="30dp"
-        android:paddingTop="50dp"
+        android:paddingTop="8dp"
         android:paddingBottom="0dp"
         android:background="@drawable/hint_bg"
         android:visibility="invisible"
@@ -56,7 +56,7 @@
         android:layout_width="1px"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="170dp"
+        android:layout_marginLeft="50dp"
         android:background="#0000ff"
         />
 </RelativeLayout>

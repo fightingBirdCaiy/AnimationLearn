@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
     private void loadStartAnimationInner(float ratio){
         mHintTextView.setScaleX(ratio);
         mHintTextView.setScaleY(ratio);
-        float translationX = -(viewWidth-viewWidth*ratio)/2 + dpToPix(140) - dpToPix(140)*ratio;
+        float translationX = -(viewWidth-viewWidth*ratio)/2 + dpToPix(20) - dpToPix(20)*ratio;
         mHintTextView.setTranslationX(translationX);
         float tranlationY = (viewHeight-viewHeight*ratio)/2;
         mHintTextView.setTranslationY(tranlationY);
