@@ -1,4 +1,12 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.glan.aspectj'
+
+aspectj {
+    includeJarFilter 'classes'
+    enableBuildType 'debug'//, 'debug' //buildType为debug时，会输出主线程方法耗时时间， 需要关闭instantRun，clean再run
+    enable true
+    printlog true
+}
 
 android {
     compileSdkVersion 26
@@ -19,9 +27,13 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.1.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+
+    compile 'org.aspectj:aspectjrt:1.8.9'
+    compile project(':misc')
+
 //    testImplementation 'junit:junit:4.12'
 //    androidTestImplementation 'com.android.support.test:runner:1.0.2'
 //    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
