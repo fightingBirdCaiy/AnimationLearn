@@ -25,8 +25,9 @@ public class AspectSpecControler {
 
         long startT = System.currentTimeMillis();
         Object proceed = joinPoint.proceed();
+
         long consume = System.currentTimeMillis() - startT;
-        Log.i(TAG,"cost time：" + consume);
+        Log.i(TAG,joinPoint.getSignature().toString() + "cost time：" + consume);
         return proceed;
     }
 
